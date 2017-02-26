@@ -1,0 +1,144 @@
+body {
+    background-color: #dedede;
+    margin: 0;
+}
+
+h3 {
+    color: #919293;
+}
+
+header {
+    overflow: auto;
+    background-color: #323334;
+}
+
+header img {
+    float: left;
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+header nav {
+    float: right;
+    margin-right: 1rem;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    width: 7rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav li a.selected {
+    color: #908f8a;
+}
+
+article, aside {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: solid 1px lightgrey;
+    box-shadow: 1px 1px grey;
+}
+
+article p {
+    text-indent: 2rem;
+}
+
+article p.meta {
+    font-size: 0.9rem;
+    text-indent: 0;
+    color: #cac8cf;
+}
+
+article ul {
+    list-style: none;
+}
+
+article figure {
+    display: inline-block;
+    border: solid 1px lightgrey;
+    padding: 1rem;
+}
+
+article figcaption {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+article table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+article table, article th, article td {
+    border: solid 1px lightgrey;
+    padding: 0.5rem;
+}
+
+article thead {
+    color: white;
+    background-color: #323334;
+    text-align: left;
+}
+
+article tfoot {
+    background-color: #cbcccd;
+    font-weight: bold;
+}
+
+article tfoot td {
+    border-color: #cbcccd;
+}
+
+aside h2 {
+    font-size: 1.2rem;
+    border-left: solid 3px lightgrey;
+    padding-left: 0.5rem;
+}
+
+aside table {
+    margin-left: 20rem;
+    font-size: 0.8rem;
+}
+
+aside th {
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    padding: 0.2rem;
+}
+
+aside td.hint {
+    color: #cac8cf;
+    padding-bottom: 0.5rem;
+}
+
+aside textarea {
+    width: 45rem;
+    height: 5rem;
+}
+
+aside input[type="submit"] {
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    background-color: #355acd;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    margin: auto;
+    width: 10%;
+    padding: 1rem;
+}
