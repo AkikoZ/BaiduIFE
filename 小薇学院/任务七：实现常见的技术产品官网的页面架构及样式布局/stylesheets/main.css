@@ -1,0 +1,665 @@
+body {
+    min-width: 80.5rem;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+section, header, footer {
+    width: 100%;
+}
+
+.middle {
+    display: block;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay * {
+    position: relative;
+    z-index: 100;
+}
+
+div.horizontalDivider {
+    border-top: solid 2px;
+    width: 2rem;
+    height: 0;
+}
+
+div.verticalDivider {
+    border-left: solid 2px;
+    height: 2.5rem;
+    width: 0;
+}
+
+div.triangle {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header {
+    overflow: auto;
+}
+
+header div#logo {
+    float: left;
+    padding: 0.8rem 0 0 4rem;
+}
+
+header div#logo * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header div#logo h1 {
+    font-family: "Heiti SC", sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-left: 0.5rem;
+}
+
+header nav {
+    float: right;
+    padding-right: 2rem;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    width: 4rem;
+    color: #787b83;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+nav li a img {
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+nav li a.selected {
+    color: #e74f4d;
+    border-bottom: solid #e74f4d 4px;
+}
+
+nav li a#login {
+    color: #e74f4d;
+}
+
+section#main {
+    height: 42rem;
+    background-image: url("../images/main.png");
+    background-size: cover;
+}
+
+section#main:after {
+    background-color: black;
+    opacity: 0.2;
+}
+
+section#main * {
+    position: absolute;
+    left: 10%;
+    color: white;
+}
+
+section#main h2 {
+    top: 12rem;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+section#main p {
+    top: 18rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+section#main button {
+    top: 26rem;
+    width: 22rem;
+    height: 4.2rem;
+    font-size: 2.2rem;
+    background-color: #e74f4d;
+    border: none;
+}
+
+section#feature {
+    position: relative;
+    height: 16rem;
+}
+
+section#feature figure {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section#feature figure#target {
+    left: 0;
+}
+
+section#feature figure#flag {
+    left: 25%;
+}
+
+section#feature figure#flower {
+    left: 50%;
+}
+
+section#feature figure#square {
+    left: 75%;
+}
+
+section#feature figure img,
+section#feature figure figcaption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#feature figure img {
+    top: 3rem;
+}
+
+section#feature figure figcaption {
+    font-family: "Heiti SC", sans-serif;
+    line-height: 1.2rem;
+    color: #767777;
+    top: 8rem;
+    text-align: center;
+    width: 60%;
+}
+
+section#feature figure div.verticalDivider {
+    position: absolute;
+    right: 0;
+    top: 7.5rem;
+    border-left-color: #767777;
+}
+
+section#slogan {
+    background-color: #ececec;
+    height: 23rem;
+}
+
+section#slogan img {
+    padding-top: 5.5rem;
+}
+
+section#slogan h2 {
+    font-family: "Heiti SC", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #8f908f;
+    padding-top: 2.5rem;
+}
+
+section#find {
+    height: 22rem;
+    background-image: url("../images/map.png");
+    background-size: cover;
+}
+
+section#find:after {
+    background-color: #aa3433;
+    opacity: 0.2;
+}
+
+section#find h3,
+section#find p {
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+}
+
+section#find h3 {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+}
+
+section#find div.horizontalDivider {
+    border-top-color: white;
+    margin: 0.5rem auto 1rem auto;
+}
+
+section#find form {
+    font-size: 0.8rem;
+    padding-top: 3rem;
+    width: 70rem;
+}
+
+section#find form div {
+    width: 15rem;
+    height: 2.5rem;
+    display: inline-block;
+    background-color: white;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+
+section#find form .focused {
+    border: solid #aa3433 1px;
+}
+
+section#find form div.select p {
+    float: left;
+    margin: 0.6rem 0 0 0.6rem;
+    color: #a8aaaa;
+}
+
+section#find form div.select img {
+    float: right;
+    background-color: #aa3433;
+    margin: 0.7rem 0.5rem 0 0;
+    padding: 0.35rem 0.2rem;
+}
+
+section#find form div.submit {
+    background-color: #aa3433;
+    font-size: 1.1rem;
+    letter-spacing: 1.5rem;
+}
+
+section#find form div.submit p {
+    float: left;
+    margin: 0.5rem 0 0 5.5rem;
+}
+
+section#find form ul.focused {
+    color: #767777;
+    background-color: #e3e2e4;
+    border-top: none;
+    position: absolute;
+    left: 18.25rem;
+    width: 15rem;
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+section#find form ul.focused li {
+    width: 100%;
+    padding: 0.3rem 0 0.3rem 2rem;
+}
+
+section#find form ul.focused li.selected {
+    padding-left: 0;
+    color: white;
+    background-color: #aa3433;
+}
+
+section#find form ul.focused li.selected img {
+    margin: 0 0.6rem;
+}
+
+section#gallery {
+    height: 35rem;
+    background-color: #f7f7f7;
+}
+
+section#gallery div.container {
+    padding: 5rem 8%;
+}
+
+section#gallery figure {
+    display: inline-block;
+    margin: 0 2%;
+}
+
+section#gallery figure img {
+    background-color: white;
+    padding: 0.8rem 0.5rem;
+    border: solid #cecece 1px;
+}
+
+section#gallery figure figcaption {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+section#gallery figure p {
+    text-align: center;
+    color: #818181;
+}
+
+section#gallery figure.focused figcaption {
+    font-size: 1.2rem;
+    letter-spacing: 2rem;
+    text-indent: 1.5rem;
+    margin: 0 0 0.2rem 0;
+}
+
+section#gallery figure.focused p {
+    margin-bottom: 0.5rem;
+}
+
+section#activity {
+    height: 33rem;
+}
+
+section#activity div.left {
+    float: left;
+    width: 66%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-image: url("../images/time.png");
+    background-size: cover;
+}
+
+section#activity div.left h2.zh {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-top: 8rem;
+}
+
+section#activity div.left h2.en {
+    font-size: 8rem;
+    font-weight: normal;
+    line-height: 7rem;
+}
+
+section#activity div.left p {
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+
+section#activity div.right {
+    position: relative;
+    margin-left: 66%;
+    height: 100%;
+    text-align: center;
+}
+
+section#activity div.right h3 {
+    text-align: center;
+    padding-top: 8rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+section#activity div.right h3 span {
+    color: #e74f4d;
+    letter-spacing: 0;
+}
+
+section#activity div.right p {
+    padding-top: 1rem;
+    color: #aaaaaa;
+    text-align: justify;
+    width: 75%;
+    font-size: 0.5rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+section#activity div.right button {
+    background-color: white;
+    color: #e74f4d;
+    border: solid #e74f4d 1px;
+    padding: 0.5rem 1.2rem;
+    margin-top: 3rem;
+}
+
+section#activity div.right div.paging {
+    color: #aaaaaa;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+section#activity div.right div.triangle {
+    left: -1.5rem;
+}
+
+section#more {
+    height: 30rem;
+    position: relative;
+}
+
+section#more>div {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    text-align: center;
+}
+
+section#more div.left {
+    left: 0;
+    width: 33%;
+    color: white;
+    background-color: #e74f4d;
+}
+
+section#more div.middle {
+    left: 33%;
+    width: 33%;
+}
+
+section#more div.right {
+    left: 66%;
+    width: 34%;
+    background-image: url("../images/train.png");
+    background-size: cover;
+    position: relative;
+}
+
+section#more div.right:after {
+    background-color: black;
+    opacity: 0.4;
+}
+
+section#more div.right div.triangle {
+    left: -0.2rem;
+}
+
+section#more div h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 10rem;
+    line-height: 1.8rem;
+}
+
+section#more div button {
+    font-size: 1rem;
+    border: solid 1px;
+    padding: 0.5rem 2rem;
+}
+
+section#more div.left button {
+    background-color: #e74f4d;
+    color: white;
+    border-color: white;
+}
+
+section#more div.middle button {
+    background-color: white;
+    color: #e74f4d;
+    border-color: #e74f4d;
+}
+
+section#more div.left div.horizontalDivider {
+    border-top-color: white;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
+section#more div.middle div.horizontalDivider {
+    border-top-color: #aaaaaa;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
+section#join {
+    height: 38rem;
+}
+
+section#join div.top {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+section#join div.top h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 5rem;
+}
+
+section#join div.top div.horizontalDivider {
+    border-top-color: #e74f4d;
+    margin: 0.5rem auto 0.8rem auto;
+}
+
+section#join div.top p {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+}
+
+section#join div.left {
+    float: left;
+    width: 25%;
+    margin-left: 8%;
+}
+
+section#join div.left div {
+    margin-bottom: 2rem;
+}
+
+section#join div.left div p.title {
+    margin-bottom: 1rem;
+}
+
+section#join div.left div p.content {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+section#join div.left div p.more {
+    color: #aaaaaa;
+    font-family: "Songti SC", serif;
+    font-size: 0.5rem;
+    text-align: right;
+}
+
+section#join form {
+    margin-left: 38%;
+    width: 55%;
+}
+
+section#join form div {
+    width: 100%;
+}
+
+section#join form div input {
+    background-color: #ededee;
+    border: none;
+    width: 43.5%;
+    height: 2rem;
+    margin: 0 0.5rem 0.8rem 0;
+    padding-left: 0.8rem;
+}
+
+section#join form textarea {
+    background-color: #ededee;
+    border: none;
+    display: block;
+    width: 91%;
+    height: 10rem;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem 0 0 0.8rem;
+}
+
+section#join form>input {
+    -webkit-appearance: none;
+    background-color: #ededee;
+    border: none;
+    font-size: 1.2rem;
+    width: 93%;
+    padding: 0.5rem 0;
+}
+
+section#contact {
+    background-color: #32363f;
+    color: white;
+    height: 20rem;
+    text-align: center;
+}
+
+section#contact h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding-top: 4rem;
+}
+
+section#contact p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding-top: 0.5rem;
+}
+
+section#contact form {
+    margin: 2rem 0;
+}
+
+section#contact form input[type="email"] {
+    width: 30%;
+    height: 2rem;
+    border: none;
+    padding-left: 0.5rem;
+}
+
+section#contact form input[type="submit"] {
+    vertical-align: middle;
+    -webkit-appearance: none;
+    background-color: #6f7278;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 0.4rem 1.5rem;
+}
+
+section#contact div img {
+    padding: 0 0.5rem;
+}
+
+footer {
+    background-color: #2f2f38;
+    height: 3.5rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    position: relative;
+}
+
+footer p.copyright {
+    position: absolute;
+    left: 8%;
+    top: 1.5rem;;
+}
+
+footer p.back {
+    font-family: "Songti SC", serif;
+    position: absolute;
+    right: 3%;
+    top: 1.5rem;
+}

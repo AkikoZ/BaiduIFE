@@ -7,3 +7,4 @@
 * [任务四：定位和居中问题](https://akikoz.github.io/BaiduIFE/小薇学院/任务四：定位和居中问题/main.html)
 * [任务五：零基础HTML及CSS编码（二）](https://akikoz.github.io/BaiduIFE/小薇学院/任务五：零基础HTML及CSS编码（二）/main.html)
 * [任务六：通过HTML及CSS模拟报纸排版](https://akikoz.github.io/BaiduIFE/小薇学院/任务六：通过HTML及CSS模拟报纸排版/main.html)
+* [任务七：实现常见的技术产品官网的页面架构及样式布局](https://akikoz.github.io/BaiduIFE/小薇学院/任务七：实现常见的技术产品官网的页面架构及样式布局/main.html)
