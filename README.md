@@ -10,3 +10,6 @@
 * [任务七：实现常见的技术产品官网的页面架构及样式布局](https://akikoz.github.io/BaiduIFE/小薇学院/任务七：实现常见的技术产品官网的页面架构及样式布局/main.html)
 * [任务八：响应式网格（栅格化）布局](https://akikoz.github.io/BaiduIFE/小薇学院/任务八：响应式网格（栅格化）布局/main.html)
 * [任务十：Flexbox 布局练习](https://akikoz.github.io/BaiduIFE/小薇学院/任务十：Flexbox%20布局练习/main.html)
+
+## 斌斌学院
+* [任务一：零基础JavaScript编码（一）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务一：零基础JavaScript编码（一）/main.html)
