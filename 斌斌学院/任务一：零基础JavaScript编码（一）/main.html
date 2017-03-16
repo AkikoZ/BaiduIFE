@@ -16,10 +16,10 @@
          在事件处理函数中
          获取aqi-input输入的值，并显示在aqi-display中
          */
-        var button = document.getElementById("button");
+        let button = document.getElementById("button");
         button.onclick = function () {
-            var input = document.getElementById("aqi-input");
-            var display = document.getElementById("aqi-display");
+            let input = document.getElementById("aqi-input");
+            let display = document.getElementById("aqi-display");
             display.innerText = input.value;
         }
     })();

@@ -29,9 +29,9 @@
      * 返回一个数组，格式见函数中示例
      */
     function getData() {
-        var data = [];
-        var list = document.getElementById("source");
-        var items = list.children;
+        let data = [];
+        let list = document.getElementById("source");
+        let items = list.children;
         for (let item of items) {
             let city = item.innerText.substr(0, 2);
             let aqi = Number(item.getElementsByTagName("b")[0].innerText);
@@ -66,22 +66,22 @@
      * 格式见ul中的注释的部分
      */
     function render(data) {
-        var list = document.getElementById("resort");
+        let list = document.getElementById("resort");
         data.forEach(function (value, key) {
-            var item = document.createElement("li");
+            let item = document.createElement("li");
             item.innerHTML = `第${key + 1}名：${value[0]}空气质量：<b>${value[1]}</b>`;
             list.appendChild(item);
         })
     }
     
     function btnHandle() {
-        var aqiData = getData();
+        let aqiData = getData();
         aqiData = sortAqiData(aqiData);
         render(aqiData);
     }
     
     function init() {
-        var button = document.getElementById("sort-btn");
+        let button = document.getElementById("sort-btn");
         button.onclick = btnHandle;
     }
     
