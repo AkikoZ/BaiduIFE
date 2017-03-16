@@ -13,3 +13,4 @@
 
 ## 斌斌学院
 * [任务一：零基础JavaScript编码（一）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务一：零基础JavaScript编码（一）/main.html)
+* [任务二：零基础JavaScript编码（二）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务二：零基础JavaScript编码（二）/main.html)
