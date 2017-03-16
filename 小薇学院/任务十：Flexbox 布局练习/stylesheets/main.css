@@ -1,0 +1,43 @@
+#container {
+    border: solid #999 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media all and (max-width:640px) {
+    #container {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    #item4 {
+        order: -1;
+    }
+}
+
+#container>div {
+    padding: 20px;
+}
+
+.content {
+    width: 150px;
+    border: solid #f00 1px;
+}
+
+#item1 .content {
+    height: 120px;
+}
+
+#item2 .content {
+    height: 100px;
+}
+
+#item3 .content {
+    height: 40px;
+}
+
+#item4 .content {
+    height: 200px;
+    border-color: #0f0;
+}
