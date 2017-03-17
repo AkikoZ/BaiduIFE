@@ -1,0 +1,12 @@
+#container {
+    height: 100px;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+#container>div {
+    width: 10px;
+    background-color: red;
+    margin-right: 0.5rem;
+}

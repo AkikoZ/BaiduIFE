@@ -16,3 +16,4 @@
 * [任务二：零基础JavaScript编码（二）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务二：零基础JavaScript编码（二）/main.html)
 * [任务三：零基础JavaScript编码（三）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务三：零基础JavaScript编码（三）/main.html)
 * [任务四：基础JavaScript练习（一）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务四：基础JavaScript练习（一）/main.html)
+* [任务五：基础JavaScript练习（二）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务五：基础JavaScript练习（二）/main.html)
