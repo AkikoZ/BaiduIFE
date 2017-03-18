@@ -8,8 +8,12 @@
     function makeBlockWithNumber(num) {
         let block = document.createElement("div");
         block.style.height = `${num}px`;
-        block.onclick = function () { this.parentNode.removeChild(this); };
+        block.onclick = removeSelf;
         return block;
+    }
+    
+    function removeSelf() {
+        this.parentNode.removeChild(this);
     }
     
     function validateInput() {
@@ -38,7 +42,9 @@
     
     function swapBlock(block1, block2) {
         let clonedBlock1 = block1.cloneNode(true);
+        clonedBlock1.onclick = removeSelf;
         let clonedBlock2 = block2.cloneNode(true);
+        clonedBlock2.onclick = removeSelf;
         block2.parentNode.replaceChild(clonedBlock1, block2);
         block1.parentNode.replaceChild(clonedBlock2, block1);
     }
