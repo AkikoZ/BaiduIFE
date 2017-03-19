@@ -35,7 +35,7 @@
         for (let i = 1; i < blocks.length; i++) {
             for (let j = i; j > 0 && heightOf(blocks[j]) < heightOf(blocks[j - 1]); j--) {
                 await sleep(100);
-                swapBlock(blocks[j], blocks[j - 1])
+                swapBlock(blocks[j], blocks[j - 1]);
             }
         }
     }
