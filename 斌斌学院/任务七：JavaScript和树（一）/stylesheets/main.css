@@ -1,0 +1,14 @@
+#container div {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: solid black 1px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex: 1 1 auto;
+}
+
+#container div.highlighted {
+    background-color: blue;
+}
