@@ -19,3 +19,4 @@
 * [任务五：基础JavaScript练习（二）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务五：基础JavaScript练习（二）/main.html)
 * [任务六：基础JavaScript练习（三）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务六：基础JavaScript练习（三）/main.html)
 * [任务七：JavaScript和树（一）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务七：JavaScript和树（一）/main.html)
+* [任务八：JavaScript和树（二）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务八：JavaScript和树（二）/main.html)
