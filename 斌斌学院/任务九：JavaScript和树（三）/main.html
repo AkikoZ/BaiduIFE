@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>任务九：JavaScript和树（三）</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+<form>
+    <div>
+        <button type="button" id="preOrder">前序遍历</button>
+        <button type="button" id="postOrder">后序遍历</button>
+    </div>
+    <div>
+        <input type="text" title="searchInput" id="searchInput">
+        <button type="button" id="search">搜索</button>
+    </div>
+    <div>
+        <input type="text" title="input" id="input">
+        <button type="button" id="add" disabled>增加</button>
+        <button type="button" id="delete" disabled>删除</button>
+    </div>
+</form>
+<div id="container">
+    <div id="root">
+        <span>super</span>
+        <div>
+            <span>car</span>
+            <div>
+                <span>apple</span>
+                <div>
+                    <span>pear</span>
+                </div>
+                <div>
+                    <span>pig</span>
+                </div>
+                <div>
+                    <span>cola</span>
+                </div>
+                <div>
+                    <span>soccer</span>
+                </div>
+            </div>
+            <div>
+                <span>phone</span>
+            </div>
+            <div>
+                <div>
+                    <span>book</span>
+                </div>
+                <div>
+                    <span>school</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>note</span>
+            <div>
+                <span>human</span>
+                <div>
+                    <span>code</span>
+                </div>
+                <div>
+                    <span>operate</span>
+                </div>
+                <div>
+                    <span>man</span>
+                </div>
+            </div>
+            <div>
+                <span>program</span>
+                <div>
+                    <span>element</span>
+                    <div>
+                        <span>cat</span>
+                    </div>
+                </div>
+                <div>
+                    <span>glass</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>fish</span>
+        </div>
+    </div>
+</div>
+<script src="scripts/main.js"></script>
+</body>
+</html>
