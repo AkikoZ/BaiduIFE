@@ -1,0 +1,51 @@
+input {
+    font-size: 1.5rem;
+    color: #555555;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: box-shadow ease-in-out .15s;
+    -webkit-transition: -webkit-box-shadow ease-in-out .15s;
+    -o-transition: box-shadow ease-in-out .15s;
+}
+
+input.fail {
+    border-color: #a94442;
+}
+
+input.success {
+    border-color: #468847;
+}
+
+input:focus {
+    outline: 0;
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+input.fail:focus {
+    border-color: #843534;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+}
+
+input.success:focus {
+    border-color: #356635;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+
+label, button {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+p.fail {
+    color: #b94a48;
+}
+
+p.success {
+    color: #468847
+}

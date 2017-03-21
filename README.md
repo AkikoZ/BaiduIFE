@@ -21,3 +21,6 @@
 * [任务七：JavaScript和树（一）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务七：JavaScript和树（一）/main.html)
 * [任务八：JavaScript和树（二）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务八：JavaScript和树（二）/main.html)
 * [任务九：JavaScript和树（三）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务九：JavaScript和树（三）/main.html)
+
+## 耀耀学院
+* [任务一：表单（一）单个表单项的检验](https://akikoz.github.io/BaiduIFE/耀耀学院/任务一：表单（一）单个表单项的检验/main.html)
