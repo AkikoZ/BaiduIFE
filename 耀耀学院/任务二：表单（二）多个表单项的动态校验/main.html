@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>任务二：表单（二）多个表单项的动态校验</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>
+                <label for="name">名称</label>
+            </th>
+            <td>
+                <input type="text" id="name">
+                <p id="nameMessage">必填，长度为4~16个字符</p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="password">密码</label>
+            </th>
+            <td>
+                <input type="password" id="password">
+                <p id="passwordMessage">必填</p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="passwordRepeat">密码确认</label>
+            </th>
+            <td>
+                <input type="password" id="passwordRepeat">
+                <p id="passwordRepeatMessage">必填，再次输入相同密码 </p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="email">邮箱</label>
+            </th>
+            <td>
+                <input type="email" id="email">
+                <p id="emailMessage">必填</p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="tel">手机</label>
+            </th>
+            <td>
+                <input type="tel" id="tel">
+                <p id="telMessage">必填</p>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <button type="button" id="submit">提交</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<script src="scripts/main.js"></script>
+</body>
+</html>

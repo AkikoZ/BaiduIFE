@@ -24,3 +24,4 @@
 
 ## 耀耀学院
 * [任务一：表单（一）单个表单项的检验](https://akikoz.github.io/BaiduIFE/耀耀学院/任务一：表单（一）单个表单项的检验/main.html)
+* [任务二：表单（二）多个表单项的动态校验](https://akikoz.github.io/BaiduIFE/耀耀学院/任务二：表单（二）多个表单项的动态校验/main.html)
