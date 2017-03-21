@@ -6,14 +6,9 @@
     let message = document.getElementById("message");
     
     document.getElementById("validate").onclick = function () {
-        if (/^.{4,16}$/.test(input.value)) {
-            input.className = "success";
-            message.className = "success";
-            message.innerText = "名称格式正确";
-        } else {
-            input.className = "fail";
-            message.className = "fail";
-            message.innerText = "名称格式错误";
-        }
+        let pass = /^.{4,16}$/.test(input.value);
+        input.className = pass ? "success" : "fail";
+        message.className = pass ? "success" : "fail";
+        message.innerText = pass ? "名称格式正确" : "名称格式错误";
     }
 }());
