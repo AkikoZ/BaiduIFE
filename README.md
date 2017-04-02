@@ -9,7 +9,7 @@
 * [任务六：通过HTML及CSS模拟报纸排版](https://akikoz.github.io/BaiduIFE/小薇学院/任务六：通过HTML及CSS模拟报纸排版/main.html)
 * [任务七：实现常见的技术产品官网的页面架构及样式布局](https://akikoz.github.io/BaiduIFE/小薇学院/任务七：实现常见的技术产品官网的页面架构及样式布局/main.html)
 * [任务八：响应式网格（栅格化）布局](https://akikoz.github.io/BaiduIFE/小薇学院/任务八：响应式网格（栅格化）布局/main.html)
-* [任务十：Flexbox 布局练习](https://akikoz.github.io/BaiduIFE/小薇学院/任务十：Flexbox%20布局练习/main.html)
+* [任务十：Flexbox布局练习](https://akikoz.github.io/BaiduIFE/小薇学院/任务十：Flexbox布局练习/main.html)
 
 ## 斌斌学院
 * [任务一：零基础JavaScript编码（一）](https://akikoz.github.io/BaiduIFE/斌斌学院/任务一：零基础JavaScript编码（一）/main.html)
@@ -31,5 +31,5 @@
 * [任务六：UI组件之浮出层](https://akikoz.github.io/BaiduIFE/耀耀学院/任务六：UI组件之浮出层/main.html)
 * [任务七：UI组件之排序表格](https://akikoz.github.io/BaiduIFE/耀耀学院/任务七：UI组件之排序表格/main.html)
 
-## ECharts & WebVR学院
-* [WebGL No.1 - Three.js 入门](https://akikoz.github.io/BaiduIFE/ECharts%20&%20WebVR学院/WebGL%20No.1%20-%20Three.js%20入门/main.html)
+## ECharts & WebVR 学院
+* [WebGL No.1 - Three.js 入门](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR学院/WebGL%20No.1%20-%20Three.js%20入门/main.html)
