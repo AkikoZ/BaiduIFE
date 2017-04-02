@@ -13,7 +13,7 @@
             div.style.left = `${30 + size * this.x}px`;
             div.style.top = `${30 + size * this.y}px`;
             div.style.transform = `rotate(${d}deg)`;
-            body.appendChild(div);
+            document.body.appendChild(div);
             this.div = div
         }
 
@@ -59,7 +59,6 @@
     const height = 10;
     const size = 30;
 
-    let body = document.getElementById("body");
     let boardHead = document.getElementById("boardHead");
     let boardBody = document.getElementById("boardBody");
     let input = document.getElementById("command");

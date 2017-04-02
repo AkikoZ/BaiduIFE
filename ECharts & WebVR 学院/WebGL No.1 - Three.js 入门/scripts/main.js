@@ -6,8 +6,8 @@
     // init renderer
     let renderer = new THREE.WebGLRenderer({antialias: true});
     renderer.setSize(1000,600);
-    document.getElementsByTagName("body")[0].appendChild(renderer.domElement);
     renderer.setClearColor(0x666666);
+    document.body.appendChild(renderer.domElement);
 
     // init scene
     let scene = new THREE.Scene();
@@ -19,12 +19,13 @@
     scene.add(camera);
 
     // make car
-    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), new THREE.MeshBasicMaterial({color: 0xffffff, wireframe:true}));
+    let whiteFrame = new THREE.MeshBasicMaterial({color: 0xffffff, wireframe: true});
+    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), whiteFrame);
     scene.add(body);
     let wheelPositions = [[-1.2,-1,1],[-1.2,-1,-1],[1.2,-1,1],[1.2,-1,-1]];
-    for (let position of wheelPositions) {
-        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), new THREE.MeshBasicMaterial({color: 0xffffff, wireframe:true}));
-        wheel.position.set(position[0],position[1],position[2]);
+    for (let wheelPosition of wheelPositions) {
+        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), whiteFrame);
+        wheel.position.set(wheelPosition[0],wheelPosition[1],wheelPosition[2]);
         scene.add(wheel);
     }
 

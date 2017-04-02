@@ -2,7 +2,6 @@
  * Created by ZZQ on 2017/4/2.
  */
 (function() {
-    let body = document.getElementById("body");
     let modal = document.getElementById("modal");
     let backdrop;
 
@@ -13,13 +12,13 @@
         backdrop = document.createElement("div");
         backdrop.id = "backdrop";
         backdrop.onclick = hideModal;
-        body.appendChild(backdrop);
+        document.body.appendChild(backdrop);
         modal.style.cssText = "visibility: visible; opacity: 1; top: 50%; transform: translateY(-50%)";
 
     }
 
     function hideModal() {
         modal.style.cssText = "visibility: hidden; opacity: 0; top: -2rem; transform: none";
-        body.removeChild(backdrop);
+        document.body.removeChild(backdrop);
     }
 }());
