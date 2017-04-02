@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+#show {
+    margin: 1rem;
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.75;
+    z-index: 1000;
+}
+
+#modal {
+    position: fixed;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    width: 25%;
+    min-height: 10rem;
+    margin: auto;
+    z-index: 1010;
+    background-color: white;
+    opacity: 0;
+    border: 1px solid black;
+    visibility: hidden;
+    transition: all 500ms;
+}
+
+#modal>* {
+    padding: 0.5rem;
+}
+
+#modal>div.title {
+    background-color: gray;
+    color: white;
+}
+
+#modal>div.operation {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}

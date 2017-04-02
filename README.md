@@ -27,4 +27,5 @@
 * [任务二：表单（二）多个表单项的动态校验](https://akikoz.github.io/BaiduIFE/耀耀学院/任务二：表单（二）多个表单项的动态校验/main.html)
 * [任务三：表单（三）联动](https://akikoz.github.io/BaiduIFE/耀耀学院/任务三：表单（三）联动/main.html)
 * [任务四：听指令的小方块（一）](https://akikoz.github.io/BaiduIFE/耀耀学院/任务四：听指令的小方块（一）/main.html)
-* [任务五：听指令的小方块（二）](https://akikoz.github.io/BaiduIFE/耀耀学院/任务五：听指令的小方块（二））/main.html)
+* [任务五：听指令的小方块（二）](https://akikoz.github.io/BaiduIFE/耀耀学院/任务五：听指令的小方块（二）/main.html)
+* [任务六：UI组件之浮出层](https://akikoz.github.io/BaiduIFE/耀耀学院/任务六：UI组件之浮出层/main.html)
