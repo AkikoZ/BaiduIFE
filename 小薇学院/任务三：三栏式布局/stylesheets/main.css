@@ -1,6 +1,6 @@
 div.container, aside, article {
     padding: 20px;
-    border: solid 1px #999;
+    border: 1px solid #999;
 }
 
 div.container {
@@ -14,7 +14,7 @@ aside, article {
 }
 
 img {
-    border: solid 1px #999;
+    border: 1px solid #999;
     margin: 5px;
 }
 

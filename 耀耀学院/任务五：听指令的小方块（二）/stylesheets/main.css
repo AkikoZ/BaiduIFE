@@ -16,7 +16,7 @@ th, td, #block {
 }
 
 td {
-    border: solid gray 1px;
+    border: 1px solid gray;
     padding: 0;
 }
 
@@ -29,7 +29,7 @@ td:first-child {
 #block {
     position: absolute;
     background-color: red;
-    border-top: solid blue 5px;
+    border-top: 5px solid blue;
     transition: all 1s;
 }
 

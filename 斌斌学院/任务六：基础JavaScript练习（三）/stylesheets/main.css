@@ -11,5 +11,5 @@ form>div {
 }
 
 #container>div.highlighted {
-    border: solid red 2px;
+    border: 2px solid red;
 }

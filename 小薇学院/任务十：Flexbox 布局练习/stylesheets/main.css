@@ -1,5 +1,5 @@
 #container {
-    border: solid #999 1px;
+    border: 1px solid #999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@
 
 .content {
     width: 150px;
-    border: solid #f00 1px;
+    border: 1px solid #f00;
 }
 
 #item1 .content {

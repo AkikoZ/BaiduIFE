@@ -32,13 +32,13 @@ section, header, footer {
 }
 
 div.horizontalDivider {
-    border-top: solid 2px;
+    border-top: 2px solid;
     width: 2rem;
     height: 0;
 }
 
 div.verticalDivider {
-    border-left: solid 2px;
+    border-left: 2px solid;
     height: 2.5rem;
     width: 0;
 }
@@ -98,7 +98,7 @@ nav li a img {
 
 nav li a.selected {
     color: #e74f4d;
-    border-bottom: solid #e74f4d 4px;
+    border-bottom: 4px solid #e74f4d;
 }
 
 nav li a#login {
@@ -260,7 +260,7 @@ section#find form div {
 }
 
 section#find form .focused {
-    border: solid #aa3433 1px;
+    border: 1px solid #aa3433;
 }
 
 section#find form div.select p {
@@ -330,7 +330,7 @@ section#gallery figure {
 section#gallery figure img {
     background-color: white;
     padding: 0.8rem 0.5rem;
-    border: solid #cecece 1px;
+    border: 1px solid #cecece;
 }
 
 section#gallery figure figcaption {
@@ -418,7 +418,7 @@ section#activity div.right p {
 section#activity div.right button {
     background-color: white;
     color: #e74f4d;
-    border: solid #e74f4d 1px;
+    border: 1px solid #e74f4d;
     padding: 0.5rem 1.2rem;
     margin-top: 3rem;
 }
@@ -483,7 +483,7 @@ section#more div h3 {
 
 section#more div button {
     font-size: 1rem;
-    border: solid 1px;
+    border: 1px solid;
     padding: 0.5rem 2rem;
 }
 
