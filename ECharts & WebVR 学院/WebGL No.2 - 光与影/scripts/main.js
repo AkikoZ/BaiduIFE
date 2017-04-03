@@ -7,7 +7,7 @@
     let renderer = new THREE.WebGLRenderer({antialias: true});
     renderer.setSize(1000,600);
     renderer.setClearColor(0x666666);
-    renderer.shadowMapEnabled = true;
+    renderer.shadowMap.enabled = true;
 
     document.body.appendChild(renderer.domElement);
 
