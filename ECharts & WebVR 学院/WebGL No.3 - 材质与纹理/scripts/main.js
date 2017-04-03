@@ -24,7 +24,7 @@
     let textureLoader = new THREE.TextureLoader();
 
     // make plane
-    let planeTexture = textureLoader.load("images/wood.png", () => renderer.render(scene, camera));
+    let planeTexture = textureLoader.load("images/wood.jpg", () => renderer.render(scene, camera));
     let plane = new THREE.Mesh(new THREE.PlaneGeometry(10,10), new THREE.MeshPhongMaterial({map: planeTexture}));
     plane.rotation.x = -Math.PI/2;
     plane.position.y = -1.4;
