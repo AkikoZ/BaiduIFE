@@ -32,5 +32,6 @@
 * [任务七：UI组件之排序表格](https://akikoz.github.io/BaiduIFE/耀耀学院/任务七：UI组件之排序表格/main.html)
 
 ## ECharts & WebVR 学院
-* [WebGL No.1 - Three.js 入门](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR学院/WebGL%20No.1%20-%20Three.js%20入门/main.html)
-* [WebGL No.2 - 光与影](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR学院/WebGL%20No.2%20-%20光与影/main.html)
+* [WebGL No.1 - Three.js 入门](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR%20学院/WebGL%20No.1%20-%20Three.js%20入门/main.html)
+* [WebGL No.2 - 光与影](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR%20学院/WebGL%20No.2%20-%20光与影/main.html)
+* [WebGL No.3 - 材质与纹理](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR%20学院/WebGL%20No.3%20-%20材质与纹理/main.html)
