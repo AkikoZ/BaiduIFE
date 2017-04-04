@@ -4,7 +4,7 @@
 (function() {
 
     // init renderer
-    let renderer = new THREE.WebGLRenderer({antialias: true});
+    let renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(1000,600);
     renderer.setClearColor(0x666666);
     document.body.appendChild(renderer.domElement);
@@ -19,7 +19,7 @@
     scene.add(camera);
 
     // make car
-    let whiteFrame = new THREE.MeshBasicMaterial({color: 0xffffff, wireframe: true});
+    let whiteFrame = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
     let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), whiteFrame);
     scene.add(body);
     let wheelPositions = [[-1.2,-1,1],[-1.2,-1,-1],[1.2,-1,1],[1.2,-1,-1]];

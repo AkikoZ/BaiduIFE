@@ -4,7 +4,7 @@
 (function() {
 
     // init renderer
-    let renderer = new THREE.WebGLRenderer({antialias: true});
+    let renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(1000,600);
     renderer.setClearColor(0x666666);
     renderer.shadowMap.enabled = true;
@@ -21,14 +21,14 @@
     scene.add(camera);
 
     // make plane
-    let plane = new THREE.Mesh(new THREE.PlaneGeometry(10,10), new THREE.MeshPhongMaterial({color: 0x90ee90}));
+    let plane = new THREE.Mesh(new THREE.PlaneGeometry(10,10), new THREE.MeshPhongMaterial({ color: 0x90ee90 }));
     plane.rotation.x = -Math.PI/2;
     plane.position.y = -1.4;
     plane.receiveShadow = true;
     scene.add(plane);
 
     // make car
-    let carMaterial = new THREE.MeshPhongMaterial({color: 0xffffff});
+    let carMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
     let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), carMaterial);
     body.castShadow = true;
     scene.add(body);

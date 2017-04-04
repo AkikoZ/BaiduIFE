@@ -4,7 +4,7 @@
 (function() {
 
     // init renderer
-    let renderer = new THREE.WebGLRenderer({antialias: true});
+    let renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(1000,600);
     renderer.setClearColor(0x666666);
     renderer.shadowMap.enabled = true;
@@ -24,26 +24,26 @@
     let textureLoader = new THREE.TextureLoader();
 
     // make plane
-    let planeTexture = textureLoader.load("images/wood.jpg", () => renderer.render(scene, camera));
-    let plane = new THREE.Mesh(new THREE.PlaneGeometry(10,10), new THREE.MeshPhongMaterial({map: planeTexture}));
+    let planeTexture = textureLoader.load("images/wood.jpg", () => render());
+    let plane = new THREE.Mesh(new THREE.PlaneGeometry(10,10), new THREE.MeshPhongMaterial({ map: planeTexture, specular: 0xffffff, side: THREE.DoubleSide }));
     plane.rotation.x = -Math.PI/2;
     plane.position.y = -1.4;
     plane.receiveShadow = true;
     scene.add(plane);
 
     // make car
-    let carTexture = textureLoader.load("images/metal.jpg", () => renderer.render(scene, camera));
-    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), new THREE.MeshPhongMaterial({map: carTexture, specular: 0xffffff}));
+    let carTexture = textureLoader.load("images/metal.jpg", () => render());
+    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), new THREE.MeshPhongMaterial({ map: carTexture, specular: 0xffffff }));
     body.castShadow = true;
     scene.add(body);
     let wheelPositions = [[-1.2,-1,1],[-1.2,-1,-1],[1.2,-1,1],[1.2,-1,-1]];
     let wheelTexture = textureLoader.load("images/wheel.jpg", (texture) => {
         texture.wrapS = THREE.RepeatWrapping;
         texture.repeat.set(4,1);
-        renderer.render(scene, camera)
+        render();
     });
     for (let wheelPosition of wheelPositions) {
-        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), new THREE.MeshPhongMaterial({map: wheelTexture}));
+        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), new THREE.MeshPhongMaterial({ map: wheelTexture }));
         wheel.position.set(wheelPosition[0],wheelPosition[1],wheelPosition[2]);
         wheel.castShadow = true;
         scene.add(wheel);
@@ -58,6 +58,11 @@
     scene.add(directionalLight);
 
     // render
-    renderer.render(scene, camera);
+    render();
+
+    // helper functions
+    function render() {
+        renderer.render(scene, camera);
+    }
 
 }());
