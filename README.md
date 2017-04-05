@@ -37,3 +37,4 @@
 * [WebGL No.3 - 材质与纹理](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR%20学院/WebGL%20No.3%20-%20材质与纹理/main.html)
 * [WebGL No.4 - 照相机和交互控制](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR%20学院/WebGL%20No.4%20-%20照相机和交互控制/main.html)
 * [WebGL No.5 - 动画](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR%20学院/WebGL%20No.5%20-%20动画/main.html)
+* [WebGL No.6 - 外部模型](https://akikoz.github.io/BaiduIFE/ECharts%20%26%20WebVR%20学院/WebGL%20No.6%20-%20外部模型/main.html)
