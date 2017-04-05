@@ -32,10 +32,11 @@
     scene.add(plane);
 
     // make car
-    let carTexture = textureLoader.load("images/metal.jpg", () => render());
-    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), new THREE.MeshPhongMaterial({ map: carTexture, specular: 0xffffff }));
+    let car = new THREE.Group();
+    let bodyTexture = textureLoader.load("images/metal.jpg", () => render());
+    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), new THREE.MeshPhongMaterial({ map: bodyTexture, specular: 0xffffff }));
     body.castShadow = true;
-    scene.add(body);
+    car.add(body);
     let wheelPositions = [[-1.2,-1,1],[-1.2,-1,-1],[1.2,-1,1],[1.2,-1,-1]];
     let wheelTexture = textureLoader.load("images/wheel.jpg", (texture) => {
         texture.wrapS = THREE.RepeatWrapping;
@@ -46,8 +47,9 @@
         let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), new THREE.MeshPhongMaterial({ map: wheelTexture }));
         wheel.position.set(wheelPosition[0],wheelPosition[1],wheelPosition[2]);
         wheel.castShadow = true;
-        scene.add(wheel);
+        car.add(wheel);
     }
+    scene.add(car);
 
     // light up
     let ambientLight = new THREE.AmbientLight(0x666666);
