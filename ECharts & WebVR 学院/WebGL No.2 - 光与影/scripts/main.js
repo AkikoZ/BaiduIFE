@@ -27,26 +27,26 @@
     plane.receiveShadow = true;
     scene.add(plane);
 
-    // make car
-    let car = new THREE.Group();
-    let carMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
-    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), carMaterial);
+    // make vehicle
+    let vehicle = new THREE.Group();
+    let vehicleMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
+    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), vehicleMaterial);
     body.castShadow = true;
-    car.add(body);
+    vehicle.add(body);
     let wheelPositions = [[-1.2,-1,1],[-1.2,-1,-1],[1.2,-1,1],[1.2,-1,-1]];
     for (let wheelPosition of wheelPositions) {
-        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), carMaterial);
+        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), vehicleMaterial);
         wheel.position.set(wheelPosition[0],wheelPosition[1],wheelPosition[2]);
         wheel.castShadow = true;
-        car.add(wheel);
+        vehicle.add(wheel);
     }
-    scene.add(car);
+    scene.add(vehicle);
 
     // light up
     let ambientLight = new THREE.AmbientLight(0x666666);
     scene.add(ambientLight);
     let directionalLight = new THREE.DirectionalLight(0x666666);
-    directionalLight.position.set(-6,3,6);
+    directionalLight.position.set(-12,3,6);
     directionalLight.castShadow = true;
     scene.add(directionalLight);
 

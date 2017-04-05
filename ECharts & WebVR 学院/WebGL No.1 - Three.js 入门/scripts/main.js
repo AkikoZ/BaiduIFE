@@ -18,18 +18,18 @@
     camera.lookAt(new THREE.Vector3(0,0,0));
     scene.add(camera);
 
-    // make car
-    let car = new THREE.Group();
-    let carMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
-    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), carMaterial);
-    car.add(body);
+    // make vehicle
+    let vehicle = new THREE.Group();
+    let vehicleMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
+    let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), vehicleMaterial);
+    vehicle.add(body);
     let wheelPositions = [[-1.2,-1,1],[-1.2,-1,-1],[1.2,-1,1],[1.2,-1,-1]];
     for (let wheelPosition of wheelPositions) {
-        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), carMaterial);
+        let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), vehicleMaterial);
         wheel.position.set(wheelPosition[0],wheelPosition[1],wheelPosition[2]);
-        car.add(wheel);
+        vehicle.add(wheel);
     }
-    scene.add(car);
+    scene.add(vehicle);
 
     // render
     renderer.render(scene, camera);

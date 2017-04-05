@@ -40,14 +40,14 @@
     plane.receiveShadow = true;
     scene.add(plane);
 
-    // make car
-    let car = new THREE.Group();
+    // make vehicle
+    let vehicle = new THREE.Group();
     let bodyTexture = textureLoader.load("images/metal.jpg", () => render());
     let body = new THREE.Mesh(new THREE.CubeGeometry(4,2,2), new THREE.MeshPhongMaterial({ map: bodyTexture, specular: 0xffffff }));
     body.castShadow = true;
-    car.add(body);
+    vehicle.add(body);
     let wheelPositions = [[-1.2,-1,1],[-1.2,-1,-1],[1.2,-1,1],[1.2,-1,-1]];
-    let wheelTexture = textureLoader.load("images/wheel.jpg", (texture) => {
+    let wheelTexture = textureLoader.load("images/wheel.jpg", texture => {
         texture.wrapS = THREE.RepeatWrapping;
         texture.repeat.set(4,1);
         render();
@@ -56,16 +56,18 @@
         let wheel = new THREE.Mesh(new THREE.TorusGeometry(0.3,0.1,20,20), new THREE.MeshPhongMaterial({ map: wheelTexture }));
         wheel.position.set(wheelPosition[0],wheelPosition[1],wheelPosition[2]);
         wheel.castShadow = true;
-        car.add(wheel);
+        vehicle.add(wheel);
     }
-    scene.add(car);
+    scene.add(vehicle);
 
     // light up
     let ambientLight = new THREE.AmbientLight(0x666666);
     scene.add(ambientLight);
     let directionalLight = new THREE.DirectionalLight(0x666666);
-    directionalLight.position.set(-6,3,6);
+    directionalLight.position.set(-12,3,6);
     directionalLight.castShadow = true;
+    directionalLight.shadow.camera.left = -15;
+    directionalLight.shadow.camera.right = 15;
     scene.add(directionalLight);
 
     // init flags
@@ -106,19 +108,19 @@
         requestAnimationFrame(animate);
         controls.update();
         if (moveForward) {
-            car.translateX(0.05);
+            vehicle.translateX(-0.05);
             render();
         }
         if (moveBackward) {
-            car.translateX(-0.05);
+            vehicle.translateX(0.05);
             render();
         }
         if (turnLeft) {
-            car.rotateY(0.01);
+            vehicle.rotateY(0.01);
             render();
         }
         if (turnRight) {
-            car.rotateY(-0.01);
+            vehicle.rotateY(-0.01);
             render();
         }
     }
