@@ -9,6 +9,7 @@
 
     // init renderer
     let renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(1000,600);
     renderer.setClearColor(0x666666);
     renderer.shadowMap.enabled = true;
@@ -46,6 +47,7 @@
     let mtlLoader = new THREE.MTLLoader();
     mtlLoader.setPath(vehicleModelPath);
     mtlLoader.load("vehicle.mtl", materials => {
+        materials.preload();
         let objLoader = new THREE.OBJLoader();
         objLoader.setMaterials(materials);
         objLoader.setPath(vehicleModelPath);
