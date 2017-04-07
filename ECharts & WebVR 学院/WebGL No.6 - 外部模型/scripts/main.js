@@ -10,7 +10,7 @@
     // init renderer
     let renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(1000,600);
+    renderer.setSize(window.innerWidth,window.innerHeight);
     renderer.setClearColor(0x666666);
     renderer.shadowMap.enabled = true;
 
@@ -20,7 +20,7 @@
     let scene = new THREE.Scene();
 
     // init camera
-    let camera = new THREE.PerspectiveCamera(45,1000/600,1,100);
+    let camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,1,100);
     camera.position.set(4,3,5);
     camera.lookAt(new THREE.Vector3(0,0,0));
     scene.add(camera);
@@ -80,7 +80,15 @@
     let turnLeft = false;
     let turnRight = false;
 
-    // bind keys
+    // bind events
+    window.addEventListener("resize", function () {
+        camera.aspect = window.innerWidth/window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        controls.handleResize();
+        render();
+    });
+
     document.body.onkeyup = function (e) {
         switch (e.keyCode) {
             case 87: moveForward = false; break;
@@ -89,6 +97,7 @@
             case 68: turnRight = false; break;
         }
     };
+
     document.body.onkeydown = function (e) {
         switch (e.keyCode) {
             case 87: moveForward = true; break;
